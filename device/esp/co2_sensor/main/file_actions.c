@@ -24,7 +24,7 @@ int read_co2(){
 }
 
 void write_co2(int co2){
-    FILE* f = fopen("/spiffs/co2", "r");
+    FILE* f = fopen("/spiffs/co2", "w");
     if (f == NULL) {
         ESP_LOGE("BUTTON", "Failed to open file for writing");
         return;

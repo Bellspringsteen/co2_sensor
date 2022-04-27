@@ -116,23 +116,24 @@ void led_display_task(void *parameter)
         int co2 = read_co2();
 
         int N = co2;
+        printf("CO2 %d \n",co2);
         int r = N % 10;
-        tm1637_set_segment_number(lcd, 0, r, true);
-        N = N / 10;
-        r = N % 10;
-        tm1637_set_segment_number(lcd, 1, r, true);
+        tm1637_set_segment_number(lcd, 3, r, true);
         N = N / 10;
         r = N % 10;
         tm1637_set_segment_number(lcd, 2, r, true);
+        N = N / 10;
+        r = N % 10;
+        tm1637_set_segment_number(lcd, 1, r, true);
         if (co2<1000){
-            tm1637_set_segment_number(lcd, 3, 0, true);
+            tm1637_set_segment_number(lcd, 0, 0, true);
         }else{
             N = N / 10;
             r = N % 10;
-            tm1637_set_segment_number(lcd, 3, r, true);
+            tm1637_set_segment_number(lcd, 0, r, true);
         }
 
-        vTaskDelay(500 / portTICK_PERIOD_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
     
 }
