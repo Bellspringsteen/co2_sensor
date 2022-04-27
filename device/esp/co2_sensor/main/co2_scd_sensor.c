@@ -1,3 +1,5 @@
+// Copied from https://github.com/UncleRus/esp-idf-lib/blob/master/examples/scd30/main/main.c
+
 #include <stdio.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
