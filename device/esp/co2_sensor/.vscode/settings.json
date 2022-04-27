@@ -1,0 +1,30 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "idf.port": "/dev/ttyUSB0",
+  "idf.flashType": "UART",
+  "files.associations": {
+    "esp_log.h": "c",
+    "cmath": "cpp",
+    "task.h": "c",
+    "sdkconfig.h": "c",
+    "esp_http_client.h": "c",
+    "file_actions.h": "c",
+    "button.h": "c",
+    "stdint.h": "c",
+    "chrono": "c",
+    "*.ipp": "c",
+    "iomanip": "c",
+    "event_groups.h": "c",
+    "esp_sntp.h": "c",
+    "wifi.h": "c",
+    "string_view": "c",
+    "freertos.h": "c",
+    "string.h": "c",
+    "time_helper.h": "c",
+    "stdio.h": "c",
+    "complex": "c",
+    "*.inc": "c",
+    "co2_scd_sensor.h": "c"
+  },
+  "idf.adapterTargetName": "esp32"
+}
